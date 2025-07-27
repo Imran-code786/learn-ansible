@@ -1,5 +1,5 @@
 - name: Demo playbook
-  hosts: web
+  hosts: app
   tasks:
     - name: Print Hello World 
       ansible.builtin.debug:
