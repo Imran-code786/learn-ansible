@@ -32,3 +32,4 @@
       ansible.builtin.systemd:
        state: restarted
        name: nginx
+       eanbled: true
