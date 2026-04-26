@@ -22,3 +22,8 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: PLAY1 - {{ PLAY1 }} , PLAY2 - {{ PLAY2 }}
+
+- name: variable from role
+  hosts: TEST
+  roles:
+    - sample
