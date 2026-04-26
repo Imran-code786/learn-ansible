@@ -1,1 +1,1 @@
-FROM_ROLES: www.role.com
+FROM_ROLE: www.role.com
