@@ -4,3 +4,10 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: URL - {{ URL }}
+
+- name: Variable from Inventory
+  hosts: TEST
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL - {{ URL }}, COMPONENT - {{ COMPONENT }}
