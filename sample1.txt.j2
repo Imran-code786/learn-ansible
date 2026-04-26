@@ -1,2 +1,11 @@
-Hello  {{ student.name }},
- welcome to {{ student.course }} Training
+# Hello  {{ student.name }},
+# welcome to {{ student.course }} Training
+
+
+ Hello {{ student.name }},
+   Welcome to {{ student.course }} Training
+ {% if student.course == "DevOps" %}
+   Fee : 101$
+ {% else %}
+   Fee : 50$
+ {% endif %}
