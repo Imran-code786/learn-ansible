@@ -1,0 +1,16 @@
+- name: variable from inventory
+  hosts: localhost
+  connection: local
+  vars:
+    student: { name: Steve, course: DevOps }
+  tasks:
+    - name: Copy template - with map
+      notify: Print a Message
+      ansible.builtin.template:
+        src: sample1.txt.j2
+        dest: /tem/h3.txt
+
+  handlers:
+    - name: Print a Message
+      ansible.builtin.debug:
+        msg: Yes file has been modified
